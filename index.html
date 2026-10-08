@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>协会社区公约 - 官方规范文档</title>
+<title>協會社區公約 - 官方規範文檔</title>
 <style>
 * {
   margin: 0;
@@ -26,6 +26,25 @@ body {
   padding: 60px 50px;
   border-radius: 12px;
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.lang-switch {
+  text-align:center;
+  margin-bottom:30px;
+}
+.lang-switch button{
+  padding:6px 14px;
+  margin:0 4px;
+  border:1px solid #c00000;
+  background:#fff;
+  color:#c00000;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:15px;
+}
+.lang-switch button.active{
+  background:#c00000;
+  color:#fff;
 }
 
 h1 {
@@ -64,6 +83,13 @@ p {
   letter-spacing: 2px;
 }
 
+.lang-block{
+  display:none;
+}
+.lang-block.active{
+  display:block;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 30px 20px;
@@ -85,105 +111,335 @@ p {
 </head>
 <body>
 <div class="container">
-  <h1>协会社区公约</h1>
+  <div class="lang-switch">
+    <button onclick="switchLang('zh-cn')" class="active">简体中文</button>
+    <button onclick="switchLang('zh-tw')">繁體中文</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
 
-  <h2>序言</h2>
-  <p>为维护本协会社区公共秩序、涵养正向社区风气、保障全体成员合法权益、规范社区运营与管理行为，构建文明、友爱、公正、自律、共治、长效的优质协会社区生态。本社区以团结互助为底色、以自律守约为基础、以共同发展为目标，依据社区发展共识与公共秩序需求，制定本公约。</p>
-  <p>本公约为协会社区最高行为准则，全体成员、管理人员、新晋成员均一体适用、平等遵守、共同维护。全体社区成员当同心同德、守正自律、彼此包容、共建共治，共同守护社区秩序、传承社区风气、推动社区长期稳定发展。</p>
+  <!-- 简体中文 -->
+  <div class="lang-block active" id="zh-cn">
+    <h1>协会社区公约（法典正式版）</h1>
 
-  <h2>第一编 总则</h2>
-  <h2>第一章 基本原则</h2>
-  <p>第一条【平等原则】社区内所有成员身份平等、规则平等、权益平等、约束平等。不因资历、等级、活跃度、人际关系享有特殊权限或豁免特权。</p>
-  <p>第二条【公正原则】社区一切管理、处置、判定、奖惩，以事实为依据、以公约为准则，客观中立、公开透明，杜绝主观偏袒、私人好恶与关系干预。</p>
-  <p>第三条【自律原则】成员以自我约束为第一准则，自觉遵守规则、自觉维护氛围、自觉抵制不良风气，主动承担社区共建责任。</p>
-  <p>第四条【友善原则】社区倡导尊重包容、理性沟通、互助友爱，禁止对立引战、恶意嘲讽、排挤孤立、言语冲突，维护和睦共处的社区氛围。</p>
-  <p>第五条【共治原则】社区实行全员共建、依规治理、公开监督，管理服务于集体，集体监督管理，双向制衡、双向负责。</p>
-  <p>第六条【正向原则】坚守积极正向价值观，弘扬正能量、抵制负能量，杜绝造谣传谣、消极内耗、煽动对立、破坏集体风气的行为。</p>
+    <h2>序言</h2>
+    <p>为维护本协会社区公共秩序、涵养正向社区风气、保障全体成员合法权益、规范社区运营与管理行为，构建文明、友爱、公正、自律、共治、长效的优质协会社区生态。本社区以团结互助为底色、以自律守约为基础、以共同发展为目标，依据社区发展共识与公共秩序需求，制定本公约。</p>
+    <p>本公约为协会社区最高行为准则，全体成员、管理人员、新晋成员均一体适用、平等遵守、共同维护。全体社区成员当同心同德、守正自律、彼此包容、共建共治，共同守护社区秩序、传承社区风气、推动社区长期稳定发展。</p>
 
-  <h2>第二章 适用范围与效力</h2>
-  <p>第七条 本公约适用于本协会社区全体在册成员、实习成员、新晋成员、管理工作人员及所有临时入驻人员。</p>
-  <p>第八条 本公约为社区最高基础性制度，社区所有细则、公告、管理要求、活动规则，均不得与本公约核心精神相抵触，抵触内容以本公约为准。</p>
-  <p>第九条 本公约具有长期效力，一经生效，对全体人员产生统一约束力，直至正式修订废止。</p>
+    <h2>第一编 总则</h2>
+    <h2>第一章 基本原则</h2>
+    <p>第一条【平等原则】社区内所有成员身份平等、规则平等、权益平等、约束平等。不因资历、等级、活跃度、人际关系享有特殊权限或豁免特权。</p>
+    <p>第二条【公正原则】社区一切管理、处置、判定、奖惩，以事实为依据、以公约为准则，客观中立、公开透明，杜绝主观偏袒、私人好恶与关系干预。</p>
+    <p>第三条【自律原则】成员以自我约束为第一准则，自觉遵守规则、自觉维护氛围、自觉抵制不良风气，主动承担社区共建责任。</p>
+    <p>第四条【友善原则】社区倡导尊重包容、理性沟通、互助友爱，禁止对立引战、恶意嘲讽、排挤孤立、言语冲突，维护和睦共处的社区氛围。</p>
+    <p>第五条【共治原则】社区实行全员共建、依规治理、公开监督，管理服务于集体，集体监督管理，双向制衡、双向负责。</p>
+    <p>第六条【正向原则】坚守积极正向价值观，弘扬正能量、抵制负能量，杜绝造谣传谣、消极内耗、煽动对立、破坏集体风气的行为。</p>
 
-  <h2>第二编 成员权利与义务</h2>
-  <h2>第一章 成员合法权利</h2>
-  <p>第十条【知情权】全体成员有权知晓社区规则、管理安排、活动通知、处置依据、公示内容，享有公开透明的信息权利。</p>
-  <p>第十一条【参与权】成员有权正常参与社区交流、社区活动、公共讨论、良性建言，合法合规参与社区共建。</p>
-  <p>第十二条【表达权】成员在文明合规前提下，拥有理性发言、合理建议、善意批评的权利，禁止打压正常合理发声。</p>
-  <p>第十三条【申诉权】成员对管理处置、判定结果、履职行为存在异议时，有权依照正规流程发起申诉，获得公正复核。</p>
-  <p>第十四条【监督权】成员有权监督管理人员履职行为、规则执行情况、公共事务推进情况，对违规失职行为可依规反馈。</p>
-  <p>第十五条【被尊重权】任何成员人格、尊严、合法权益不受侵犯，禁止嘲讽、羞辱、网暴、排挤、恶意针对、公开挂人等侵权行为。</p>
+    <h2>第二章 适用范围与效力</h2>
+    <p>第七条 本公约适用于本协会社区全体在册成员、实习成员、新晋成员、管理工作人员及所有临时入驻人员。</p>
+    <p>第八条 本公约为社区最高基础性制度，社区所有细则、公告、管理要求、活动规则，均不得与本公约核心精神相抵触，抵触内容以本公约为准。</p>
+    <p>第九条 本公约具有长期效力，一经生效，对全体人员产生统一约束力，直至正式修订废止。</p>
 
-  <h2>第二章 成员基本义务</h2>
-  <p>第十六条 自觉遵守本公约及社区各项合规制度，主动维护社区公共秩序与公共风气。</p>
-  <p>第十七条 文明发言、理性沟通、友善待人，尊重每一位成员，包容差异、克制情绪，杜绝情绪化冲突与对立。</p>
-  <p>第十八条 积极维护社区形象与集体利益，不发表损害社区声誉、破坏社区团结的言论与行为。</p>
-  <p>第十九条 服从社区依规做出的管理判定、合理安排与集体决策，尊重管理工作、配合社区治理。</p>
-  <p>第二十条 保守社区内部合规信息，不随意泄露内部资料、隐私信息、未公开事务。</p>
-  <p>第二十一条 主动参与社区正向建设，力所能及参与交流、活动、互助，共同维护社区良性生态。</p>
+    <h2>第二编 成员权利与义务</h2>
+    <h2>第一章 成员合法权利</h2>
+    <p>第十条【知情权】全体成员有权知晓社区规则、管理安排、活动通知、处置依据、公示内容，享有公开透明的信息权利。</p>
+    <p>第十一条【参与权】成员有权正常参与社区交流、社区活动、公共讨论、良性建言，合法合规参与社区共建。</p>
+    <p>第十二条【表达权】成员在文明合规前提下，拥有理性发言、合理建议、善意批评的权利，禁止打压正常合理发声。</p>
+    <p>第十三条【申诉权】成员对管理处置、判定结果、履职行为存在异议时，有权依照正规流程发起申诉，获得公正复核。</p>
+    <p>第十四条【监督权】成员有权监督管理人员履职行为、规则执行情况、公共事务推进情况，对违规失职行为可依规反馈。</p>
+    <p>第十五条【被尊重权】任何成员人格、尊严、合法权益不受侵犯，禁止嘲讽、羞辱、网暴、排挤、恶意针对、公开挂人等侵权行为。</p>
 
-  <h2>第三编 社区行为规范</h2>
-  <h2>第一章 文明言行规范</h2>
-  <p>第二十二条 社区全域坚持文明交流，禁止低俗言论、辱骂嘲讽、阴阳怪气、挑衅引战、恶意抬杠、人身攻击。</p>
-  <p>第二十三条 禁止刷屏灌水、恶意占位、重复无意义内容、扰乱正常交流秩序。</p>
-  <p>第二十四条 禁止以调侃、玩梗为名，进行冒犯、羞辱、排挤、针对他人的行为。</p>
-  <p>第二十五条 公共发言保持理性克制，不传播谣言、不实信息、负面节奏、对立言论。</p>
+    <h2>第二章 成员基本义务</h2>
+    <p>第十六条 自觉遵守本公约及社区各项合规制度，主动维护社区公共秩序与公共风气。</p>
+    <p>第十七条 文明发言、理性沟通、友善待人，尊重每一位成员，包容差异、克制情绪，杜绝情绪化冲突与对立。</p>
+    <p>第十八条 积极维护社区形象与集体利益，不发表损害社区声誉、破坏社区团结的言论与行为。</p>
+    <p>第十九条 服从社区依规做出的管理判定、合理安排与集体决策，尊重管理工作、配合社区治理。</p>
+    <p>第二十条 保守社区内部合规信息，不随意泄露内部资料、隐私信息、未公开事务。</p>
+    <p>第二十一条 主动参与社区正向建设，力所能及参与交流、活动、互助，共同维护社区良性生态。</p>
 
-  <h2>第二章 秩序纪律规范</h2>
-  <p>第二十六条 禁止私自引流、广告推广、外链骚扰、无关推广等影响社区秩序的行为。</p>
-  <p>第二十七条 禁止抱团对立、拉帮结派、孤立成员、制造小团体矛盾、分裂社区氛围。</p>
-  <p>第二十八条 禁止恶意挑衅、反复纠缠、故意制造矛盾、激化冲突、煽动舆论。</p>
-  <p>第二十九条 禁止冒用他人名义、伪造信息、误导公众、弄虚作假破坏社区公信。</p>
+    <h2>第三编 社区行为规范</h2>
+    <h2>第一章 文明言行规范</h2>
+    <p>第二十二条 社区全域坚持文明交流，禁止低俗言论、辱骂嘲讽、阴阳怪气、挑衅引战、恶意抬杠、人身攻击。</p>
+    <p>第二十三条 禁止刷屏灌水、恶意占位、重复无意义内容、扰乱正常交流秩序。</p>
+    <p>第二十四条 禁止以调侃、玩梗为名，进行冒犯、羞辱、排挤、针对他人的行为。</p>
+    <p>第二十五条 公共发言保持理性克制，不传播谣言、不实信息、负面节奏、对立言论。</p>
 
-  <h2>第三章 共建风气规范</h2>
-  <p>第三十条 倡导互帮互助、礼貌友善、虚心交流、积极分享，营造温暖正向的社区氛围。</p>
-  <p>第三十一条 鼓励理性讨论、良性思辨、友好沟通，拒绝戾气、拒绝内耗、拒绝对立。</p>
-  <p>第三十二条 尊重社区劳动成果、尊重管理付出、尊重他人付出，杜绝白嫖、诋毁、恶意否定。</p>
+    <h2>第二章 秩序纪律规范</h2>
+    <p>第二十六条 禁止私自引流、广告推广、外链骚扰、无关推广等影响社区秩序的行为。</p>
+    <p>第二十七条 禁止抱团对立、拉帮结派、孤立成员、制造小团体矛盾、分裂社区氛围。</p>
+    <p>第二十八条 禁止恶意挑衅、反复纠缠、故意制造矛盾、激化冲突、煽动舆论。</p>
+    <p>第二十九条 禁止冒用他人名义、伪造信息、误导公众、弄虚作假破坏社区公信。</p>
 
-  <h2>第四编 管理治理规范</h2>
-  <h2>第一章 管理人员准则</h2>
-  <p>第三十三条 管理人员为社区服务者、秩序维护者、风气引领者，无特权、只担责，履职为公、处事公正。</p>
-  <p>第三十四条 管理人员必须严于律己、以身作则，自身先行守约，杜绝双重标准。</p>
-  <p>第三十五条 履职全程客观理性、文明耐心，禁止情绪化管理、泄愤式管理、针对式管理。</p>
-  <p>第三十六条 管理行为有据可依、有规可查、留痕可溯，杜绝随意处置、越权处置、私下乱断。</p>
-  <p>第三十七条 管理人员相互协作、相互补位、相互监督，禁止内耗拆台、私怨工作、偏袒徇私。</p>
+    <h2>第三章 共建风气规范</h2>
+    <p>第三十条 倡导互帮互助、礼貌友善、虚心交流、积极分享，营造温暖正向的社区氛围。</p>
+    <p>第三十一条 鼓励理性讨论、良性思辨、友好沟通，拒绝戾气、拒绝内耗、拒绝对立。</p>
+    <p>第三十二条 尊重社区劳动成果、尊重管理付出、尊重他人付出，杜绝白嫖、诋毁、恶意否定。</p>
 
-  <h2>第二章 公共事务治理</h2>
-  <p>第三十八条 社区日常事务依规处理，常规事项快速处置，争议事项集体研判，重大事项公开表决。</p>
-  <p>第三十九条 社区活动公开透明、规则清晰、流程规范，保障全体成员公平参与。</p>
-  <p>第四十条 社区问题及时处理、反馈闭环，做到事事有回应、件件有落地。</p>
+    <h2>第四编 管理治理规范</h2>
+    <h2>第一章 管理人员准则</h2>
+    <p>第三十三条 管理人员为社区服务者、秩序维护者、风气引领者，无特权、只担责，履职为公、处事公正。</p>
+    <p>第三十四条 管理人员必须严于律己、以身作则，自身先行守约，杜绝双重标准。</p>
+    <p>第三十五条 履职全程客观理性、文明耐心，禁止情绪化管理、泄愤式管理、针对式管理。</p>
+    <p>第三十六条 管理行为有据可依、有规可查、留痕可溯，杜绝随意处置、越权处置、私下乱断。</p>
+    <p>第三十七条 管理人员相互协作、相互补位、相互监督，禁止内耗拆台、私怨工作、偏袒徇私。</p>
 
-  <h2>第五编 申诉、监督与纠错机制</h2>
-  <h2>第一章 监督机制</h2>
-  <p>第四十一条 社区实行全员监督制度，全体成员均可监督规则执行、管理履职、公共事务推进。</p>
-  <p>第四十二条 对管理失职、滥用权限、处事不公、消极不作为等行为，成员可依规反馈举证。</p>
+    <h2>第二章 公共事务治理</h2>
+    <p>第三十八条 社区日常事务依规处理，常规事项快速处置，争议事项集体研判，重大事项公开表决。</p>
+    <p>第三十九条 社区活动公开透明、规则清晰、流程规范，保障全体成员公平参与。</p>
+    <p>第四十条 社区问题及时处理、反馈闭环，做到事事有回应、件件有落地。</p>
 
-  <h2>第二章 申诉机制</h2>
-  <p>第四十三条 成员对处置结果、管理行为存在异议，可通过官方正规通道提交申诉，严禁公开闹事、刷屏申诉。</p>
-  <p>第四十四条 申诉实行登记、复核、研判、公示、闭环流程，保障公正复查。</p>
-  <p>第四十五条 禁止恶意申诉、反复纠缠、无理取闹，恶意申诉扰乱秩序者依规处置。</p>
+    <h2>第五编 申诉、监督与纠错机制</h2>
+    <h2>第一章 监督机制</h2>
+    <p>第四十一条 社区实行全员监督制度，全体成员均可监督规则执行、管理履职、公共事务推进。</p>
+    <p>第四十二条 对管理失职、滥用权限、处事不公、消极不作为等行为，成员可依规反馈举证。</p>
 
-  <h2>第三章 纠错机制</h2>
-  <p>第四十六条 管理判定出现失误、疏漏、不公时，应当主动更正、公开致歉、纠正结果、复盘整改。</p>
-  <p>第四十七条 社区制度存在漏洞的，及时收集建议、启动修订、完善闭环。</p>
+    <h2>第二章 申诉机制</h2>
+    <p>第四十三条 成员对处置结果、管理行为存在异议，可通过官方正规通道提交申诉，严禁公开闹事、刷屏申诉。</p>
+    <p>第四十四条 申诉实行登记、复核、研判、公示、闭环流程，保障公正复查。</p>
+    <p>第四十五条 禁止恶意申诉、反复纠缠、无理取闹，恶意申诉扰乱秩序者依规处置。</p>
 
-  <h2>第六编 公约生效、修订与废止</h2>
-  <p>第四十八条【生效规则】本公约经社区管理团队审议、全员公示后正式生效，为社区永久基础公约，未修订前持续有效。</p>
-  <p>第四十九条【修订规则】公约修订需经过：提案提交、集体初审、全员意见征集、集体表决、公示更新五大流程，全程公开透明。</p>
-  <p>第五十条【废止规则】本公约仅可由集体表决废止，个人无权停用、修改、废除本公约。</p>
-  <p>第五十一条【漏洞补充】本公约未尽事宜，依照公约核心原则、公平公正理念、公共利益优先原则协商处理，补充规则与本公约具备同等效力。</p>
+    <h2>第三章 纠错机制</h2>
+    <p>第四十六条 管理判定出现失误、疏漏、不公时，应当主动更正、公开致歉、纠正结果、复盘整改。</p>
+    <p>第四十七条 社区制度存在漏洞的，及时收集建议、启动修订、完善闭环。</p>
 
-  <h2>附则</h2>
-  <p>第一条 本公约所有条款对全体成员、管理人员、新老成员统一适用，无任何例外情形。</p>
-  <p>第二条 社区一切旧规、临时规定、口头约定与本公约冲突的，以本公约为准。</p>
-  <p>第三条 本公约为社区自治根本准则，是社区治理、成员约束、管理履职、纠纷判定的唯一核心依据。</p>
-  <p>第四条 本公约最终解释权归本协会社区集体所有。</p>
+    <h2>第六编 公约生效、修订与废止</h2>
+    <p>第四十八条【生效规则】本公约经社区管理团队审议、全员公示后正式生效，为社区永久基础公约，未修订前持续有效。</p>
+    <p>第四十九条【修订规则】公约修订需经过：提案提交、集体初审、全员意见征集、集体表决、公示更新五大流程，全程公开透明。</p>
+    <p>第五十条【废止规则】本公约仅可由集体表决废止，个人无权停用、修改、废除本公约。</p>
+    <p>第五十一条【漏洞补充】本公约未尽事宜，依照公约核心原则、公平公正理念、公共利益优先原则协商处理，补充规则与本公约具备同等效力。</p>
 
-  <h2>全篇总结</h2>
-  <p>本《协会社区公约》立足社区自治、文明共建、长期发展，以平等公正、自律友善、公开共治为核心底色，明确了成员权利义务、言行边界、管理准则、监督申诉与修订机制，构建了一套完整、闭环、法治化的社区自治体系。</p>
-  <p>公约不是束缚，而是社区秩序的保障、成员权益的护盾、长期发展的基石。无规则则无秩序，无自律则无长久。每一位成员的自律守约、友善包容、主动共建，都是社区正向发展的核心力量。唯有人人守规、人人尊重、人人共建、人人珍惜，社区才能长久和睦、稳定向好、持续成长。</p>
+    <h2>附则</h2>
+    <p>第一条 本公约所有条款对全体成员、管理人员、新老成员统一适用，无任何例外情形。</p>
+    <p>第二条 社区一切旧规、临时规定、口头约定与本公约冲突的，以本公约为准。</p>
+    <p>第三条 本公约为社区自治根本准则，是社区治理、成员约束、管理履职、纠纷判定的唯一核心依据。</p>
+    <p>第四条 本公约最终解释权归本协会社区集体所有。</p>
 
-  <div class="footer-mark">© FMAC 飞友飞行协会｜Sky NAV    版本号：2026.10.08</div>
+    <h2>全篇总结</h2>
+    <p>本《协会社区公约》立足社区自治、文明共建、长期发展，以平等公正、自律友善、公开共治为核心底色，明确了成员权利义务、言行边界、管理准则、监督申诉与修订机制，构建了一套完整、闭环、法治化的社区自治体系。</p>
+    <p>公约不是束缚，而是社区秩序的保障、成员权益的护盾、长期发展的基石。无规则则无秩序，无自律则无长久。每一位成员的自律守约、友善包容、主动共建，都是社区正向发展的核心力量。唯有人人守规、人人尊重、人人共建、人人珍惜，社区才能长久和睦、稳定向好、持续成长。</p>
+
+    <div class="footer-mark">© FMAC 飞友飞行协会｜Sky NAV</div>
+  </div>
+
+  <!-- 繁體中文 -->
+  <div class="lang-block" id="zh-tw">
+    <h1>協會社區公約（法典正式版）</h1>
+
+    <h2>序言</h2>
+    <p>為維護本協會社區公共秩序、涵養正向社區風氣、保障全體成員合法權益、規範社區營運與管理行為，建構文明、友愛、公正、自律、共治、長效的優質協會社區生態。本社區以團結互助為底色、以自律守約為基礎、以共同發展為目標，依據社區發展共識與公共秩序需求，制定本公約。</p>
+    <p>本公約為協會社區最高行為準則，全體成員、管理人員、新晉成員均一體適用、平等遵守、共同維護。全體社區成員當同心同德、守正自律、彼此包容、共建共治，共同守護社區秩序、傳承社區風氣、推動社區長期穩定發展。</p>
+
+    <h2>第一編 總則</h2>
+    <h2>第一章 基本原則</h2>
+    <p>第一條【平等原則】社區內所有成員身份平等、規則平等、權益平等、約束平等。不因資歷、等級、活躍度、人際關係享有特殊權限或豁免特權。</p>
+    <p>第二條【公正原則】社區一切管理、處置、判定、獎懲，以事實為依據、以公約為準則，客觀中立、公開透明，杜絕主觀偏袒、私人好惡與關係干預。</p>
+    <p>第三條【自律原則】成員以自我約束為第一準則，自覺遵守規則、自覺維護氛圍、自覺抵制不良風氣，主動承擔社區共建責任。</p>
+    <p>第四條【友善原則】社區倡導尊重包容、理性溝通、互助友愛，禁止對立引戰、惡意嘲諷、排擠孤立、言語衝突，維護和睦共處的社區氛圍。</p>
+    <p>第五條【共治原則】社區實行全員共建、依規治理、公開監督，管理服務於集體，集體監督管理，雙向制衡、雙向負責。</p>
+    <p>第六條【正向原則】堅守積極正向價值觀，弘揚正能量、抵制負能量，杜絕造謠傳謠、消極內耗、煽動對立、破壞集體風氣的行為。</p>
+
+    <h2>第二章 適用範圍與效力</h2>
+    <p>第七條 本公約適用於本協會社區全體在冊成員、實習成員、新晉成員、管理工作人員及所有臨時入驻人員。</p>
+    <p>第八條 本公約為社區最高基礎性制度，社區所有細則、公告、管理要求、活動規則，均不得與本公約核心精神相抵觸，抵觸內容以本公約為準。</p>
+    <p>第九條 本公約具有長期效力，一经生效，對全體人員產生統一約束力，直至正式修訂廢止。</p>
+
+    <h2>第二編 成員權利與義務</h2>
+    <h2>第一章 成員合法權利</h2>
+    <p>第十條【知情權】全體成員有權知曉社區規則、管理安排、活動通知、處置依據、公示內容，享有公開透明的資訊權利。</p>
+    <p>第十一條【參與權】成員有權正常參與社區交流、社區活動、公共討論、良性建言，合法合規參與社區共建。</p>
+    <p>第十二條【表達權】成員在文明合規前提下，擁有理性發言、合理建議、善意批評的權利，禁止打壓正常合理發聲。</p>
+    <p>第十三條【申訴權】成員對管理處置、判定結果、履職行為存在異議時，有權依照正規流程發起申訴，獲得公正複核。</p>
+    <p>第十四條【監督權】成員有權監督管理人員履職行為、規則執行情況、公共事務推進情況，對違規失職行為可依規反饋。</p>
+    <p>第十五條【被尊重權】任何成員人格、尊嚴、合法權益不受侵犯，禁止嘲諷、羞辱、網暴、排擠、惡意針對、公開掛人等侵權行為。</p>
+
+    <h2>第二章 成員基本義務</h2>
+    <p>第十六條 自覺遵守本公約及社區各項合規制度，主動維護社區公共秩序與公共風氣。</p>
+    <p>第十七條 文明發言、理性溝通、友善待人，尊重每一位成員，包容差異、克制情緒，杜絕情緒化衝突與對立。</p>
+    <p>第十八條 積極維護社區形象與集體利益，不發表損害社區聲譽、破壞社區團結的言論與行為。</p>
+    <p>第十九條 服從社區依規做出的管理判定、合理安排與集體決策，尊重管理工作、配合社區治理。</p>
+    <p>第二十條 保守社區內部合規資訊，不隨意洩露內部資料、隱私資訊、未公開事務。</p>
+    <p>第二十一條 主動參與社區正向建設，力所能及參與交流、活動、互助，共同維護社區良性生態。</p>
+
+    <h2>第三編 社區行為規範</h2>
+    <h2>第一章 文明言行規範</h2>
+    <p>第二十二條 社區全域堅持文明交流，禁止低俗言論、辱罵嘲諷、陰陽怪氣、挑釁引戰、惡意抬槓、人身攻擊。</p>
+    <p>第二十三條 禁止刷屏灌水、惡意佔位、重複無意義內容、擾亂正常交流秩序。</p>
+    <p>第二十四條 禁止以調侃、玩梗為名，進行冒犯、羞辱、排擠、針對他人的行為。</p>
+    <p>第二十五條 公共發言保持理性克制，不傳播謠言、不實資訊、負面節奏、對立言論。</p>
+
+    <h2>第二章 秩序紀律規範</h2>
+    <p>第二十六條 禁止私自引流、廣告推廣、外鏈騷擾、無關推廣等影響社區秩序的行為。</p>
+    <p>第二十七條 禁止抱團對立、拉幫結派、孤立成員、製造小團體矛盾、分裂社區氛圍。</p>
+    <p>第二十八條 禁止惡意挑釁、反覆糾纏、故意製造矛盾、激化衝突、煽動輿論。</p>
+    <p>第二十九條 禁止冒用他人名義、偽造資訊、誤導公眾、弄虛作假破壞社區公信。</p>
+
+    <h2>第三章 共建風氣規範</h2>
+    <p>第三十條 倡導互相幫助、禮貌友善、虛心交流、積極分享，營造溫暖正向的社區氛圍。</p>
+    <p>第三十一條 鼓勵理性討論、良性思辨、友好溝通，拒絕戾氣、拒絕內耗、拒絕對立。</p>
+    <p>第三十二條 尊重社區勞動成果、尊重管理付出、尊重他人付出，杜絕白嫖、詆毀、惡意否定。</p>
+
+    <h2>第四編 管理治理規範</h2>
+    <h2>第一章 管理人員準則</h2>
+    <p>第三十三條 管理人員為社區服務者、秩序維護者、風氣引領者，無特權、只擔責，履職為公、處事公正。</p>
+    <p>第三十四條 管理人員必須嚴於律己、以身作則，自身先行守約，杜絕雙重標準。</p>
+    <p>第三十五條 履職全程客觀理性、文明耐心，禁止情緒化管理、洩憤式管理、針對式管理。</p>
+    <p>第三十六條 管理行為有據可依、有規可查、留痕可溯，杜絕隨意處置、越權處置、私下亂斷。</p>
+    <p>第三十七條 管理人員相互協作、相互補位、相互監督，禁止內耗拆台、私怨工作、偏袒徇私。</p>
+
+    <h2>第二章 公共事務治理</h2>
+    <p>第三十八條 社區日常事務依規處理，常規事項快速處置，爭議事項集體研判，重大事項公開表決。</p>
+    <p>第三十九條 社區活動公開透明、規則清晰、流程規範，保障全體成員公平參與。</p>
+    <p>第四十條 社區問題及時處理、反饋閉環，做到事事有回應、件件有落地。</p>
+
+    <h2>第五編 申訴、監督與糾錯機制</h2>
+    <h2>第一章 監督機制</h2>
+    <p>第四十一條 社區實行全員監督制度，全體成員均可監督規則執行、管理履職、公共事務推進。</p>
+    <p>第四十二條 對管理失職、濫用權限、處事不公、消極不作為等行為，成員可依規反饋舉證。</p>
+
+    <h2>第二章 申訴機制</h2>
+    <p>第四十三條 成員對處置結果、管理行為存在異議，可透過官方正規通道提交申訴，嚴禁公開鬧事、刷屏申訴。</p>
+    <p>第四十四條 申訴實行登記、複核、研判、公示、閉環流程，保障公正複查。</p>
+    <p>第四十五條 禁止惡意申訴、反覆糾纏、無理取鬧，惡意申訴擾亂秩序者依規處置。</p>
+
+    <h2>第三章 糾錯機制</h2>
+    <p>第四十六條 管理判定出現失誤、疏漏、不公時，應當主動更正、公開致歉、糾正結果、復盤整改。</p>
+    <p>第四十七條 社區制度存在漏洞的，及時收集建議、啟動修訂、完善閉環。</p>
+
+    <h2>第六編 公約生效、修訂與廢止</h2>
+    <p>第四十八條【生效規則】本公約經社區管理團隊審議、全員公示後正式生效，為社區永久基礎公約，未修訂前持續有效。</p>
+    <p>第四十九條【修訂規則】公約修訂需經過：提案提交、集體初審、全員意見徵集、集體表決、公示更新五大流程，全程公開透明。</p>
+    <p>第五十條【廢止規則】本公約僅可由集體表決廢止，個人無權停用、修改、廢除本公約。</p>
+    <p>第五十一條【漏洞補充】本公約未盡事宜，依照公約核心原則、公平公正理念、公共利益優先原則協商處理，補充規則與本公約具備同等效力。</p>
+
+    <h2>附則</h2>
+    <p>第一條 本公約所有條款對全體成員、管理人員、新舊成員統一適用，無任何例外情形。</p>
+    <p>第二條 社區一切舊規、臨時規定、口頭約定與本公約衝突的，以本公約為準。</p>
+    <p>第三條 本公約為社區自治根本準則，是社區治理、成員約束、管理履職、糾紛判定的唯一核心依據。</p>
+    <p>第四條 本公約最終解釋權歸本協會社區集體所有。</p>
+
+    <h2>全篇總結</h2>
+    <p>本《協會社區公約》立足社區自治、文明共建、長期發展，以平等公正、自律友善、公開共治為核心底色，明確了成員權利義務、言行邊界、管理準則、監督申訴與修訂機制，建構了一套完整、閉環、法治化的社區自治體系。</p>
+    <p>公約不是束縛，而是社區秩序的保障、成員權益的護盾、長期發展的基石。無規則則無秩序，無自律則無長久。每一位成員的自律守約、友善包容、主動共建，都是社區正向發展的核心力量。唯有人人守規、人人尊重、人人共建、人人珍惜，社區才能長久和睦、穩定向好、持續成長。</p>
+
+    <div class="footer-mark">© FMAC 飛友飛行協會｜Sky NAV</div>
+  </div>
+
+  <!-- English -->
+  <div class="lang-block" id="en">
+    <h1>Association Community Convention (Official Codified Version)</h1>
+
+    <h2>Preamble</h2>
+    <p>To maintain public order of this association community, foster positive community culture, protect the legitimate rights and interests of all members, standardize community operation and management, and build a civilized, friendly, impartial, self-disciplined, co-governed and sustainable high-quality community ecosystem. Based on the consensus of community development and public order requirements, this Convention is formulated with solidarity and mutual assistance as the foundation, self-discipline and compliance as the principle, and common development as the goal.</p>
+    <p>This Convention is the supreme code of conduct for the association community. All members, administrators and new members shall be equally bound and jointly uphold this document. All community members shall work with one heart, uphold self-discipline, embrace mutual tolerance, build and govern together, safeguard community order, inherit community culture and promote stable long-term development.</p>
+
+    <h2>Part I General Provisions</h2>
+    <h2>Chapter 1 Basic Principles</h2>
+    <p>Article 1 [Principle of Equality] All members of the community enjoy equal status, equal rules, equal rights and equal obligations. No special privileges or exemptions shall be granted based on seniority, rank, activity level or personal relationships.</p>
+    <p>Article 2 [Principle of Impartiality] All community management, disposition, judgment, rewards and penalties shall be based on facts and governed by this Convention. Judgements shall remain objective and transparent. Prejudice, personal preference and relationship interference are prohibited.</p>
+    <p>Article 3 [Principle of Self-Discipline] Self-restraint is the primary norm for members. Members shall voluntarily abide by rules, maintain community atmosphere, resist unhealthy tendencies and take responsibility for community co-construction.</p>
+    <p>Article 4 [Principle of Amity] The community advocates respect, tolerance, rational communication and mutual assistance. Provocation, malicious mockery, ostracism and verbal conflict are prohibited to preserve a harmonious environment.</p>
+    <p>Article 5 [Principle of Co-Governance] The community implements full-participation co-construction, rule-based governance and public supervision. Management serves the collective and is supervised by members, forming mutual checks and accountability.</p>
+    <p>Article 6 [Principle of Positivity] Uphold positive values, promote positive energy and reject negative energy. Spreading rumors, internal friction, inciting confrontation and conduct damaging collective culture are prohibited.</p>
+
+    <h2>Chapter 2 Scope and Validity</h2>
+    <p>Article 7 This Convention applies to all registered members, intern members, new members, administrative staff and all temporary visitors of this association community.</p>
+    <p>Article 8 This Convention is the fundamental document of the community. All supplementary rules, announcements, management requirements and activity regulations shall not contradict the core spirit of this Convention; any conflicting content shall be subject to this Convention.</p>
+    <p>Article 9 This Convention remains effective for the long term. Once promulgated, it imposes binding force on all personnel until formally revised or repealed.</p>
+
+    <h2>Part II Members’ Rights and Obligations</h2>
+    <h2>Chapter 1 Legitimate Rights of Members</h2>
+    <p>Article 10 [Right to Know] All members have the right to know community rules, management arrangements, event notices, disposal basis and public announcements, and enjoy transparent information rights.</p>
+    <p>Article 11 [Right to Participate] Members may take part in community discussions, events, public debates and submit constructive suggestions to participate in community co-construction legally.</p>
+    <p>Article 12 [Right of Expression] Under civilized and compliant premises, members have the right to speak rationally, put forward reasonable suggestions and make well-intentioned criticism. Suppression of legitimate speech is forbidden.</p>
+    <p>Article 13 [Right of Appeal] Members who disagree with management decisions or administrative conduct may file an appeal through formal procedures for fair review.</p>
+    <p>Article 14 [Right of Supervision] Members may supervise administrators’ performance, rule enforcement and progress of public affairs, and submit evidence for misconduct and dereliction of duty.</p>
+    <p>Article 15 [Right to Dignity] The personality, dignity and legitimate rights of every member shall not be violated. Mockery, humiliation, cyber harassment, ostracism, targeted harassment and public doxxing are prohibited.</p>
+
+    <h2>Chapter 2 Basic Obligations of Members</h2>
+    <p>Article 16 Voluntarily abide by this Convention and all community rules, and actively maintain public order and community atmosphere.</p>
+    <p>Article 17 Speak politely, communicate rationally and treat others with kindness. Respect every member, tolerate differences, control emotions and avoid emotional conflicts and confrontation.</p>
+    <p>Article 18 Safeguard community reputation and collective interests. Do not make statements or take actions that harm the community’s reputation or unity.</p>
+    <p>Article 19 Obey lawful management decisions, reasonable arrangements and collective resolutions of the community, respect management work and cooperate with community governance.</p>
+    <p>Article 20 Protect confidential internal community information. Do not arbitrarily disclose internal materials, personal privacy or unpublished matters.</p>
+    <p>Article 21 Take an active part in positive community development. Join discussions, events and mutual-aid activities to maintain a healthy community ecosystem.</p>
+
+    <h2>Part III Community Code of Conduct</h2>
+    <h2>Chapter 1 Code of Civilized Speech and Conduct</h2>
+    <p>Article 22 All communications within the community shall remain civilized. Vulgar remarks, insults, sarcasm, provocation, malicious argument and personal attacks are prohibited.</p>
+    <p>Article 23 Spamming, flooding, meaningless repeated posts and disruption of normal conversation order are prohibited.</p>
+    <p>Article 24 Do not use jokes or memes to offend, humiliate, ostracize or target other members.</p>
+    <p>Article 25 Keep public statements rational and restrained. Do not spread rumors, false information, negative narratives or confrontational remarks.</p>
+
+    <h2>Chapter 2 Order and Discipline</h2>
+    <p>Article 26 Unauthorized traffic diversion, commercial advertising, external link harassment and irrelevant promotion that disrupt community order are prohibited.</p>
+    <p>Article 27 Gang confrontation, cliques, member ostracism, internal factional conflicts and actions dividing the community atmosphere are prohibited.</p>
+    <p>Article 28 Malicious provocation, repeated harassment, deliberate conflict escalation and inciting public opinion are prohibited.</p>
+    <p>Article 29 Impersonation, falsified information, misleading the public and fraud that undermines community credibility are prohibited.</p>
+
+    <h2>Chapter 3 Norms for Community Building</h2>
+    <p>Article 30 Encourage mutual assistance, politeness, respectful communication and active sharing to build a warm and positive community atmosphere.</p>
+    <p>Article 31 Encourage rational discussion and constructive debate. Reject hostility, internal friction and confrontation.</p>
+    <p>Article 32 Respect community work, administrative efforts and contributions of others. Reject freeloading, slander and malicious denial.</p>
+
+    <h2>Part IV Management and Governance Rules</h2>
+    <h2>Chapter 1 Administrator Code</h2>
+    <p>Article 33 Administrators serve the community, maintain order and set positive examples. They bear responsibilities without special privileges; they shall govern fairly and serve the public good.</p>
+    <p>Article 34 Administrators must practice self-discipline and lead by example. They must comply with rules themselves and avoid double standards.</p>
+    <p>Article 35 All duties shall be performed objectively, rationally and patiently. Emotional, retaliatory or targeted administration is forbidden.</p>
+    <p>Article 36 All administrative actions must be evidence-based, traceable and documented. Arbitrary disposal, overstepping authority and private judgement without basis are prohibited.</p>
+    <p>Article 37 Administrators shall cooperate, back each other up and supervise one another. Internal sabotage, personal grudge-based work and favouritism are forbidden.</p>
+
+    <h2>Chapter 2 Public Affairs Governance</h2>
+    <p>Article 38 Daily community affairs are handled in accordance with rules. Routine matters are resolved promptly; disputed matters are collectively reviewed; major matters require public voting.</p>
+    <p>Article 39 Community events shall be transparent, clearly regulated and properly organized to guarantee fair participation for all members.</p>
+    <p>Article 40 Community issues shall be handled promptly with closed-loop feedback. All enquiries shall receive responses and all matters shall be resolved.</p>
+
+    <h2>Part V Appeal, Supervision and Error Correction Mechanism</h2>
+    <h2>Chapter 1 Supervision Mechanism</h2>
+    <p>Article 41 The community adopts full-member supervision. All members may supervise rule enforcement, administrator performance and progress of public affairs.</p>
+    <p>Article 42 Members may submit evidence and feedback for administrative dereliction, abuse of authority, unfair handling and inaction.</p>
+
+    <h2>Chapter 2 Appeal Mechanism</h2>
+    <p>Article 43 Members who object to disposal results or administrative conduct may submit appeals via official channels. Public disturbance or spamming appeals are prohibited.</p>
+    <p>Article 44 Appeals follow a closed-loop workflow: registration, review, evaluation, publication and final feedback to guarantee fair re-examination.</p>
+    <p>Article 45 Malicious appeals, repeated entanglement and unreasonable disturbance are forbidden. Those disrupting order by frivolous appeals shall be sanctioned.</p>
+
+    <h2>Chapter 3 Error Correction Mechanism</h2>
+    <p>Article 46 When administrative rulings contain errors, omissions or unfairness, administrators shall voluntarily correct the result, issue public apologies and conduct reviews and rectification.</p>
+    <p>Article 47 If loopholes exist in community rules, collect suggestions, initiate revisions and complete process improvements.</p>
+
+    <h2>Part VI Entry into Force, Revision and Repeal</h2>
+    <p>Article 48 [Effective Rule] This Convention takes effect after review by the management team and public announcement. It is the permanent foundational convention of the community and remains valid before revision.</p>
+    <p>Article 49 [Revision Rule] Revisions follow five steps: proposal submission, preliminary collective review, public comment collection, collective voting and public release of updated text. The whole process is transparent.</p>
+    <p>Article 50 [Repeal Rule] This Convention can only be repealed by collective vote. No individual may suspend, amend or abolish it.</p>
+    <p>Article 51 [Gap Supplement] Matters not covered by this Convention shall be settled through negotiation following core principles, fairness and priority of collective interests. Supplementary rules carry equal legal force.</p>
+
+    <h2>Supplementary Provisions</h2>
+    <p>Article 1 All clauses apply equally to all members, administrators, new and senior members without exception.</p>
+    <p>Article 2 Any old rules, temporary provisions or verbal agreements conflicting with this Convention shall be superseded by this Convention.</p>
+    <p>Article 3 This Convention is the fundamental norm of community self-governance. It is the sole core basis for community governance, member discipline, administrator duties and dispute adjudication.</p>
+    <p>Article 4 The final interpretation right of this Convention belongs collectively to the association community.</p>
+
+    <h2>Summary</h2>
+    <p>This Association Community Convention is built upon community self-governance, civilized co-construction and sustainable long-term development. Centered on equality, impartiality, self-discipline, kindness and open co-governance, it defines members’ rights and obligations, behavioural boundaries, administrator standards, appeal supervision and revision procedures, forming a complete, closed-loop and rule-based self-governance system.</p>
+    <p>Convention is not restraint, but protection for community order, shield for member rights and cornerstone for long-term development. No order exists without rules; no sustainability exists without self-discipline. Every member’s compliance, tolerance and contribution are the core driving force for positive community growth. Only when everyone abides by rules, respects others, builds together and cherishes this community, can our community stay harmonious, stable and keep growing.</p>
+
+    <div class="footer-mark">© FMAC Flight Aviators Association｜Sky NAV</div>
+  </div>
 </div>
+
+<script>
+function switchLang(lang){
+  document.querySelectorAll('.lang-block').forEach(block=>{
+    block.classList.remove('active');
+  })
+  document.getElementById(lang).classList.add('active');
+
+  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+    btn.classList.remove('active');
+  })
+  event.target.classList.add('active');
+}
+</script>
 </body>
 </html>
+
